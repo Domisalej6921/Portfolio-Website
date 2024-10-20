@@ -1,0 +1,76 @@
+.main-container{
+    padding-top: 100px;
+    display: flex;
+}
+
+.dom-text-container {
+    color: white;
+    margin-left: 250px;
+    margin-top: 200px;
+    margin-right: 250px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.dom-para {
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+}
+
+.dom-hello {
+    font-weight: bold;
+    color: #c21043;
+    font-size: 60px;
+}
+
+.dom-img-container {
+    margin-bottom: 5%;
+    margin-right: 50px;
+}
+
+.dom-img {
+    border: solid;
+    border-color: white;
+}
+
+@media screen and (max-width: 1028px){
+    .dom-text-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .main-container {
+        padding-left: auto;
+        padding-right: auto;
+        display: block;
+    }
+
+    .dom-text-container {
+        margin: 0;
+        padding-top: 90px;
+        position: relative;
+    }
+
+    .dom-para {
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .dom-img-container {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 50px;
+    }
+
+    .dom-img {
+        margin-left: 30px;
+        width: 200px;
+        height: 300px;
+    }
+}
