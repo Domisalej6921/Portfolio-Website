@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="../static/styles/base.css" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" href="../static/imgs/cv_logo.png" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.60/css/all.min.css">
+        <link href="../static/styles/projects.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <p class="logo-text">Dominick George</p>
+                </div>
+
+                <button aria-label="toggle-menu"  id="responsiveMenuToggleButton" class="menu-toggle-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="open-icon"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="close-icon"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </button>
+
+                <div class="menu">
+                    <ul class="navbar-links-list">
+                        <li class="navbar-link"><a href="/" class="url-link">Home</a></li>
+                        <li class="navbar-link"><a href="/about" class="url-link">About</a></li>
+                        <li class="navbar-link"><a href="/cv" class="url-link">CV</a></li>
+                        <li class="navbar-link"><a href="/projects" class="url-link">Projects</a></li>
+                        <li class="navbar-link"><a href="/contact" class="url-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="page-contents">
+            <p class="intro-text">Through my coding journey I have developed a large range of projects.<br> This has helped my understanding of the wider concepts needed to be effective as a developer.</p>
+            <h1 class="projects-title">Projects</h1>
+            <p class="list-text">All text within tabs are links which take you to more info of the project.</p>
+            <p class="list-text">This is the list of projects I have created: </p>
+
+            <div class="tabs">
+
+                <!-- Games Tab -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="games-tab" checked>
+                <label for="games-tab" class="tabs__label">Games</label>
+                <div class="tabs__content">
+
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/monopoly-game">Monopoly Game</a></li>
+                        <li class="projects-list-item"><a href="/projects/merchant-ship-game">Merchant Ship Game</a></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/2d-java-rpg-game">2D Java RPG Game</a></li>
+                        <!-- <li class="projects-list-item"><a href="/projects/2d-java-platformer-game">2D Java Platformer Game</a></li> NOT FINISHED -->
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- Web Dev Tab -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="web-dev-tab">
+                <label for="web-dev-tab" class="tabs__label">Website Development</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/timemap">Time-Map Website</a></li>
+                        <li class="projects-list-item"><a href="/projects/cv-website">My CV Website</a></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/client-project">A client project for a mentorship program website</a></li>
+                        <!-- <li class="projects-list-item"><a href="/projects/wye-camping-website">A full stack website for my mum's camping business</a></li>  NOT FINISHED -->
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- Cyber Security Tab -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="security-tab">
+                <label for="security-tab" class="tabs__label">Cyber Security</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/password-manager">Password Manager</a></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/secure-login-gui">Secure Login GUI</a></li>
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Computing -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="cloud-tab">
+                <label for="cloud-tab" class="tabs__label">Cloud Computing</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- DevOps Tab -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="devops-tab">
+                <label for="devops-tab" class="tabs__label">DevOps</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Development Tab -->
+                <input type="radio", class="tabs__radio" name="projects-tab" id="mobile-tab">
+                <label for="mobile-tab" class="tabs__label">Mobile Development</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+
+                <!-- Miscellaneous Tab -->
+                <input type="radio" class="tabs__radio" name="projects-tab" id="misc-tab">
+                <label for="misc-tab" class="tabs__label">Misc</label>
+                <div class="tabs__content">
+                    <!-- Beginner Section -->
+                    <h3>Beginner Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"><a href="/projects/python-gui">A python app for my mums business</a></li>
+                        <li class="projects-list-item"><a href="/projects/database">Database Assessment</a></li>
+                    </ul>
+
+                    <!-- Intermediate Section -->
+                    <h3>Intermediate Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+
+                    <!-- Advanced Section -->
+                    <h3>Advanced Projects</h3>
+                    <ul class="projects-list">
+                        <li class="projects-list-item"></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="info-text">If prior notice is given, I will be able to go through the git repositories for each project and explain the development process.</p>
+        </main>
+        <footer class="base-footer">
+            <div class="footer-container">
+                <p class="footer-text">Dominick George 2024</p>
+            </div>
+            <div class="contact-info">
+                <ul>
+                    <li><a href="#" class="phone-no">(UK)+44 7727 290359</a></li>
+                    <li><a href="#" class="seperator">/</a></li>
+                    <li><a href="#" class="email-link">dominickgeorge21@gmail.com</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="static/js/main.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/695add4257.js" crossorigin="anonymous"></script>
+    </body>
+</html>
