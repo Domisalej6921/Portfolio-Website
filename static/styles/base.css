@@ -41,6 +41,21 @@ ul {
     background-color: rgb(74, 71, 71);
 }
 
+.index-heading-container {
+    margin-bottom: 5%;
+    border-bottom: solid white;
+}
+
+.index-heading {
+    padding-top: 5%;
+    text-align: center;
+}
+
+header h1 span {
+    padding-left: 8px;
+    padding: auto;
+}
+
 .header .navbar .logo a {
     color: #fff;;
     font-size: 30px;
@@ -182,7 +197,7 @@ ul {
 
 /* Changing navbar start on the smaller screen*/
 @media screen and (max-width: 697px) {
-    
+ 
     #responsiveMenuToggleButton {
         display: block;
     }
