@@ -118,7 +118,7 @@ ul {
     background-color: #c21043;
     display:flex;
     align-items: center;
-    position: static;
+    position: fixed;
     bottom: 0;
 }
 

@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: rgb(6,4,23);
+  background: black;
 }
 
 .center {
@@ -17,8 +17,7 @@ body {
 .menu {
   width: 350px;
   height: 350px;
-  background: rgb(6,4,23);
-  border: 0.5mm solid white;
+  background: black;
 }
 
 .items {
@@ -27,18 +26,12 @@ body {
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
-
-  transition: 2s;
-  background: red;
-}
-
-.items:hover {
-  transform: rotateX('90deg');
 }
 
 .item {
   display: block;
   text-decoration: none;
+  transition: 0.5s;
   color: white;
   font-family: poppins;
   font-size: 24px;
@@ -48,4 +41,15 @@ body {
   text-align: center;
   position: absolute;
   top: calc(50% - 20px);
+  backface-visibility: hidden;
 }
+
+.item:hover {
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+  transition: 0.5s;
+}
+
+.item.active {
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
+} 
