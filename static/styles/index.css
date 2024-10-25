@@ -3,6 +3,20 @@
     display: flex;
 }
 
+.index-heading-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: solid white;
+    text-align: center;
+}
+
+.index-heading {
+    padding-top: 3%;
+    position: relative;
+}
+
 .intro-para {
     margin-top: 15%;
     width: 100%;
