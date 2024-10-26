@@ -150,6 +150,10 @@
     text-decoration: none;
 }
 
+footer {
+    position: static;
+}
+
 @media screen and (max-width: 1006px) {
     .project-img {
         width: 750px;
