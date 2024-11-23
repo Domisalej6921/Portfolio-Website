@@ -1,5 +1,4 @@
 .main-container{
-    padding-top: 100px;
     display: flex;
 }
 
@@ -25,10 +24,14 @@
     width: 100%;
     color: white;
     position: relative;
+    background: transparent;
+    background-color: transparent;
     text-align: center;
 } 
 
 .intro-text {
+    position: relative; /* Ensure z-index works */
+    z-index: 2000;
     background: transparent;
     background-color: transparent;
     padding-right: 5%;
@@ -40,8 +43,33 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: absolute;
     pointer-events: none;
+}
+
+.mobile-links {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-link-item {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    backface-visibility: hidden;
+    pointer-events: auto;
+}
+
+.mobile-links a:hover {
+    background-color: #555;
+    color: #c21043;
 }
 
 .dom-hello {
@@ -100,4 +128,25 @@
         width: 200px;
         height: 300px;
     }
+}
+
+
+
+/* Changing navbar start on the smaller screen*/
+@media screen and (max-width: 554px) {
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-links {
+        display: flex; /* Show on mobile */
+        flex-direction: column; /* Ensure links are stacked vertically */
+        background: transparent;
+        background-color: transparent;
+        position: static; /* Ensure z-index works */
+        margin-top: 6%;
+        z-index: 1000;
+    }
+    
 }

@@ -7,10 +7,6 @@
     background-color: black;
 }
 
-.main-container {
-    height: 100%;
-}
-
 a, a:hover {
     text-decoration: none;
 }
@@ -120,6 +116,8 @@ header h1 span {
 
 footer {
     position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
 }
 
