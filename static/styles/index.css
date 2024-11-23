@@ -4,21 +4,24 @@
 }
 
 .index-heading-container {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
+    align-items: center;
+    justify-content: center;
+    position: static;
     border-bottom: solid white;
     text-align: center;
 }
 
 .index-heading {
-    padding-top: 3%;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: relative;
+    border-bottom: solid white;
 }
 
 .intro-para {
-    margin-top: 15%;
+    margin-top: 5%;
     width: 100%;
     color: white;
     position: relative;
@@ -26,6 +29,8 @@
 } 
 
 .intro-text {
+    background: transparent;
+    background-color: transparent;
     padding-right: 5%;
     padding-left:  5%;
     font-family: "Montserrat", sans-serif;
@@ -36,6 +41,7 @@
     justify-content: center;
     text-align: center;
     position: absolute;
+    pointer-events: none;
 }
 
 .dom-hello {
