@@ -49,6 +49,16 @@ header h1 span {
     margin-left: 50px;
 }
 
+.car-link {
+    font-size: 20px;
+    color: #c21043;
+    font-weight: bold;
+}
+
+.car-link:hover {
+    color: rgb(129, 127, 127);
+}
+
 #responsiveMenuToggleButton {
     background-color: rgb(74, 71, 71);
     border: none;

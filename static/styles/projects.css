@@ -58,6 +58,12 @@
     padding-bottom: 50px;
 }
 
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-img-container {
     display: flex;
     align-content: center;
